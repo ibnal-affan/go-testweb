@@ -3,9 +3,9 @@ on: [push]
 jobs:
   Hello-World-Job:
     runs-on:
-      - codebuild-myProject-${{ github.run_id }}-${{ github.run_attempt }}
-      # - image:linux-5.0
-      # - instance-size:small
+      - codebuild-godemo-${{ github.run_id }}-${{ github.run_attempt }}
+      - image:linux-5.0
+      - instance-size:small
     steps:
       - run: echo "Hellooooo World!"
 

@@ -7,5 +7,7 @@ jobs:
       - image:linux-5.0
       - instance-size:small
     steps:
-      - run: echo "Hellooooo World!"
-
+      - name: test shell echo
+        run: echo "Hellooooo World!"
+      - name: Build the Docker image
+        run: docker build -t my-image-name:$(date +%s) .

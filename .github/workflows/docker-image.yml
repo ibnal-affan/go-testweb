@@ -8,6 +8,6 @@ jobs:
       - instance-size:small
     steps:
       - name: test shell echo
-        run: echo "test1234"
+        run: echo "test12345"
       # - name: Build the Docker image
       #   run: docker build -t my-image-name:$(date +%s) ../../

@@ -42,7 +42,7 @@ jobs:
       #       arn:aws:secretsmanager:us-east-1:841162709195:secret:demo-go-testweb-qMO1ys
 
       - name: Test Echo
-        run: echo $aws-access-key-id
+        run: echo ${{ secrets.AWS_ACCESS_KEY_ID }}
 
       # - name: Checkout code
       #   uses: actions/checkout@v3

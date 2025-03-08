@@ -16,7 +16,7 @@ func main() {
 
     //response with "ok"
     http.HandleFunc("/health", func(w http.ResponseWriter, r *http.Request) {
-        fmt.Fprintf(w, "OK")
+        fmt.Fprintf(w, "OKs")
     })
 
     log.Fatal(http.ListenAndServe(":80", nil))
